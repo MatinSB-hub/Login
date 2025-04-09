@@ -1,0 +1,327 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    align-items: center;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+/* ///////////////////////owen made/////////////////////////// */
+.nav-menu li span {
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 1em;
+    position: relative;
+    margin: 20px;
+    border: none;
+    background: linear-gradient(150deg , #edff9f 15%, #f345dfd8 80%);
+    font-weight: 600;
+  }
+  
+  .nav-menu li span {
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  /* ///////////owen made//////deleted code for error//////////////////// */
+  /* .nav-menu li span::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #b227d8 0%, #f8dc26 50%, #c625d0 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+  } */
+  /* ////////owen made/////////deleted code for error//////////////////// */
+  
+  .nav-menu li span:hover {
+    transform: translate(0, -6px);
+    box-shadow: 5px -10px 25px 0 rgba(148, 78, 241, 0.5),  -10px 5px 25px 0 rgba(39, 200, 255, 0.5);
+  }
+  
+  .nav-menu li span::after {
+    transform: rotate(200deg);
+  }
+/* ///////////////////////owen made/////////////////////////// */
+
+/* ///////not owen made///////////deleted for best css////////////////// */
+/* .nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    background: #ff4141;
+} */
+/* ///////not owen made///////////deleted for best css////////////////// */
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+
+/* .nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+} */
+.nav-dropdown{
+    display: none;
+}
+
+
+/* ////////////////////////////rlated code about login button////////////////////////// */
+.btn {
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 17px !important;
+    position: relative;
+    margin: 32px ;
+    border: none;
+    background: linear-gradient(150deg , #ff9ff4 20%, #f345dfd8 80%);
+    font-weight: 600;
+  }
+  
+  .btn-1 {
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  
+  .btn-1:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5),  -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+  }
+  
+  .btn-1:hover::after {
+    transform: rotate(200deg);
+  }
+/* ////////////////////////////rlated code about login button////////////////////////// */
+
+@media(max-width:1290px){
+
+    /* ////////////owen made////////////// */
+    .nav-menu li span {
+        text-decoration: none;
+        padding: 10px 30px;
+        font-size: 1em;
+        position: relative;
+        margin: 5px;
+        border: none;
+        background: linear-gradient(150deg , #edff9f 15%, #f345dfd8 80%);
+        font-weight: 600;
+      }
+
+      /* /////////////////////owen made for login button//////////////////////////// */
+      .btn {
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 17px !important;
+        position: relative;
+        margin: 18px;
+        border: none;
+        background: linear-gradient(150deg , #ff9ff4 20%, #f345dfd8 80%);
+        font-weight: 600;
+      }
+      /* /////////////////////owen made for login button//////////////////////////// */
+
+
+    /* ////////////owen made////////////// */
+
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width: 40px;
+    }
+    .nav-logo p{
+        font-size: 25px;
+    }
+    .nav-menu{
+        gap:0px;
+        font-size: 16px;
+    }
+    .nav-login-cart{
+        gap: 30px;
+    }
+    .nav-login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1026px){
+
+     /* ////////////owen made////////////// */
+     .nav-menu li span {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        position: relative;
+        margin: 5px;
+        border: none;
+        background: linear-gradient(150deg , #edff9f 15%, #f345dfd8 80%);
+        font-weight: 600;
+      }
+
+        /* /////////////////////owen made for login button//////////////////////////// */
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 14px !important;
+            position: relative;
+            margin: 12px;
+            border: none;
+            background: linear-gradient(150deg , #ff9ff4 20%, #f345dfd8 80%);
+            font-weight: 600;
+          }
+          /* /////////////////////owen made for login button//////////////////////////// */
+
+    /* ////////////owen made////////////// */
+
+    .navbar{
+        padding: 12px 30px;
+    }
+    .nav-menu{
+        gap: 0px;
+        font-size: 14px;
+    }
+    .nav-login-cart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .nav-login-cart img{
+        width: 30px;
+    }
+    .nav-cart-count{
+        margin-left: -40px;
+        margin-top: -30px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media(max-width:800px){
+    .navbar{
+        padding: 0px 0px;
+    }
+    .nav-dropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .nav-menu{
+        display: none;
+        height: 80px;
+        width: 0%;
+        position: absolute;
+        /* background-color: white; */
+        justify-content: center;
+        margin-right: 53px;
+        top: 60px;
+    }
+    .nav-menu-visible{
+        display: flex;
+    }
+    .nav-dropdown.open{
+        transform: rotate(90deg);
+    }
+}
+
+@media(max-width:500px){
+    .navbar{
+        padding: 8px 0px;
+        gap:0;
+    }
+    .nav-logo{
+        transform: scale(0.8);
+    }
+    .nav-menu{
+        height: 70px;
+        top: 50px;
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
+    }
+}
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+ 
+  
+
